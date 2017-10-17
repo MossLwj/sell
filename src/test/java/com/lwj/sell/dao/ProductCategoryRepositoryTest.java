@@ -2,6 +2,7 @@ package com.lwj.sell.dao;
 
 import com.lwj.sell.entity.ProductCategory;
 import org.hibernate.annotations.DynamicUpdate;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
