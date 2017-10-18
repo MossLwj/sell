@@ -7,11 +7,10 @@ import lombok.Getter;
  * 商品状态
  */
 @Getter
-public enum  ProductStatusEnum {
+public enum ProductStatusEnum {
 
-    UP(0,"在架"),
-    Down(1,"下架"),
-    ;
+    UP(0, "在架"),
+    Down(1, "下架"),;
 
     private int code;
 
