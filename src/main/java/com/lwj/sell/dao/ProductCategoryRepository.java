@@ -4,7 +4,7 @@ import com.lwj.sell.entity.ProductCategory;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
-
+/* JapRepository<> 中放实体和实体的唯一主键类型*/
 public interface ProductCategoryRepository extends JpaRepository<ProductCategory, Integer> {
 
     /**
