@@ -3,6 +3,7 @@ package com.lwj.sell.utils;
 import com.lwj.sell.VO.ResultVO;
 
 /**
+ * 接口返回数据格式封装类
  * Created By lwj
  * 2017/10/18 0018 10:46
  */

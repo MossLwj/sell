@@ -1,6 +1,7 @@
 package com.lwj.sell.service.impl;
 
 import com.lwj.sell.dao.ProductInfoRepository;
+import com.lwj.sell.dto.CartDTO;
 import com.lwj.sell.entity.ProductInfo;
 import com.lwj.sell.enums.ProductStatusEnum;
 import com.lwj.sell.service.ProductService;
@@ -35,5 +36,15 @@ public class ProductServiceImpl implements ProductService{
     @Override
     public ProductInfo save(ProductInfo productInfo) {
         return infoRepository.save(productInfo);
+    }
+
+    @Override
+    public void increaseStock(List<CartDTO> cartDTOList) {
+
+    }
+
+    @Override
+    public void decreaseStock(List<CartDTO> cartDTOList) {
+
     }
 }

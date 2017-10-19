@@ -2,7 +2,6 @@ package com.lwj.sell.service.impl;
 
 import com.lwj.sell.dao.OrderDetailRepository;
 import com.lwj.sell.dao.OrderMasterRepository;
-import com.lwj.sell.dto.CartDTO;
 import com.lwj.sell.dto.OrderDTO;
 import com.lwj.sell.entity.OrderDetail;
 import com.lwj.sell.entity.OrderMaster;
@@ -20,10 +19,9 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
+ * 订单service
  * Created By lwj
  * 2017/10/18 0018 15:28
  */

@@ -3,6 +3,7 @@ package com.lwj.sell.utils;
 import java.util.Random;
 
 /**
+ * 按格式生成唯一Key工具类
  * Created By lwj
  * 2017/10/18 0018 16:42
  */

@@ -8,6 +8,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.util.Date;
 
+/**
+ * 商品类目表实体
+ * Created By lwj
+ * 2017/10/18 0018 13:29
+ */
 @Entity
 @Data
 @DynamicUpdate

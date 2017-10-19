@@ -7,6 +7,7 @@ import javax.persistence.Id;
 import java.math.BigDecimal;
 
 /**
+ * 订单明细表实体
  * Created By lwj
  * 2017/10/18 0018 13:47
  */

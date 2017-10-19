@@ -11,6 +11,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 /**
+ * 订单主表实体
  * Created By lwj
  * 2017/10/18 0018 13:29
  */

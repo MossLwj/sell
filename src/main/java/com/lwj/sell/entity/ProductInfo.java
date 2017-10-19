@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import java.math.BigDecimal;
 
 /**
- * 商品表
+ * 商品表实体
  */
 @Entity
 @Data
