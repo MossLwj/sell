@@ -3,6 +3,8 @@ package com.lwj.sell.service.impl;
 import com.lwj.sell.dao.OrderMasterRepository;
 import com.lwj.sell.dto.OrderDTO;
 import com.lwj.sell.entity.OrderDetail;
+import com.lwj.sell.enums.OrderStatusEnum;
+import com.lwj.sell.enums.PayStatusEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;
@@ -73,14 +75,23 @@ public class OrderServiceImplTest {
 
     @Test
     public void cancel() throws Exception {
+        OrderDTO orderDTO = orderService.findOne(orderId);
+        OrderDTO result = orderService.cancel(orderDTO);
+        Assert.assertEquals(OrderStatusEnum.CANCEL.getCode(), result.getOrderStatus());
     }
 
     @Test
     public void finish() throws Exception {
+        OrderDTO orderDTO = orderService.findOne(orderId);
+        OrderDTO result = orderService.finish(orderDTO);
+        Assert.assertEquals(OrderStatusEnum.FINISHED.getCode(), result.getOrderStatus());
     }
 
     @Test
     public void paid() throws Exception {
+        OrderDTO orderDTO = orderService.findOne(orderId);
+        OrderDTO result = orderService.paid(orderDTO);
+        Assert.assertEquals(PayStatusEnum.SUCCESS.getCode(), result.getPayStatus());
     }
 
 }
