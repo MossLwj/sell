@@ -1,5 +1,6 @@
 package com.lwj.sell.service.impl;
 
+import com.lwj.sell.converter.OrderMaster2OrderDTOConverter;
 import com.lwj.sell.dao.OrderDetailRepository;
 import com.lwj.sell.dao.OrderMasterRepository;
 import com.lwj.sell.dto.CartDTO;
@@ -17,6 +18,7 @@ import com.lwj.sell.utils.KeyUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -106,7 +108,9 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public Page<OrderDTO> findList(String buyerOpenid, Pageable pageable) {
-        return null;
+        Page<OrderMaster> orderMasterPage = orderMasterRepository.findByBuyerOpenid(buyerOpenid, pageable);
+        Page<OrderDTO> orderDTOPage = new PageImpl<OrderDTO>(OrderMaster2OrderDTOConverter.convert(orderMasterPage.getContent()));
+        return orderDTOPage;
     }
 
     @Override
