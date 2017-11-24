@@ -72,5 +72,10 @@ public class BuyerProductController {
         return ResultVOUtil.success(productVOList);
     }
 
+    @GetMapping("/detail")
+    public ResultVO detail() {
+        return ResultVOUtil.success();
+    }
+
 
 }

@@ -1,7 +1,9 @@
 package com.lwj.sell.entity;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.lwj.sell.enums.OrderStatusEnum;
 import com.lwj.sell.enums.PayStatusEnum;
+import com.lwj.sell.utils.serializer.Date2LongSerializer;
 import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
 

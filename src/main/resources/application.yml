@@ -6,6 +6,9 @@ spring:
     url: jdbc:mysql://192.168.2.27/sell?characterEncoding=utf-8&useSSL=false
   jpa:
     show-sql: true
+#设置返回的对象的属性为null的话不显示
+  jackson:
+    default-property-inclusion: non_null
 server:
   context-path: /sell
 
