@@ -5,7 +5,6 @@ import com.lwj.sell.VO.ProductVO;
 import com.lwj.sell.VO.ResultVO;
 import com.lwj.sell.entity.ProductCategory;
 import com.lwj.sell.entity.ProductInfo;
-import com.lwj.sell.enums.ProductStatusEnum;
 import com.lwj.sell.service.CategoryService;
 import com.lwj.sell.service.ProductService;
 import com.lwj.sell.utils.ResultVOUtil;
@@ -16,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
